@@ -17,10 +17,18 @@ class Movie
 		$this->directedBy = $directedBy;
 	}
 
-	public function isAvailable() {
+	public function boolAvailable() {
 		$n = rand(0, 1);
 		if ($n) {
 			$this->available = true;
+		}
+	}
+
+	public function stringAvailable() {
+		if ($this->available) {
+			return 'Yes';
+		} else {
+			return 'No';
 		}
 	}
 }
