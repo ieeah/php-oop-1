@@ -8,7 +8,7 @@ class Movie
 	public $category;
 	public $directedBy;
 
-	function __construct($title, $year = 2000, $cast, $category, $directedBy) {
+	function __construct($title, $year, $cast, $category, $directedBy) {
 		$this->title = $title;
 		$this->year = $year;
 		$this->cast = $cast;
